@@ -1,0 +1,62 @@
+:root{
+    --amarillo: #F1A600;
+    --azul-oscuro:#1F1D2C; 
+    --azul-clar: #242635;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: var(--azul-oscuro);
+    font-family: 'Inter', sans-serif;
+    color: white;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    padding: 2rem 0;
+    background-color: #F1A600;
+}
+nav ul {
+    display: flex;
+    background-color: aqua;
+}
+nav ul li{
+
+    align-items: center;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.checkbtn{
+
+
+    
+    display: none;
+    position: relative;
+
+}
+#check{
+    display: none;
+}
+
+.texto{
+    margin-left: 4rem;
+}
+.texto h1{
+    font-size: 150px;
+}
+
+.texto p{
+    font-size: 40px;
+}
+
+
