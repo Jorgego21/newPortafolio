@@ -12,22 +12,25 @@
 
 body{
 
-    background-color: var(--azul-oscuro);
+    background-color: var(--azul-clar);
     font-family: 'Inter', sans-serif;
     color: white;
 
 }
 
 nav{
+
     display: flex;
     flex-direction: row-reverse;
     justify-content: end;
+    
     padding: 2rem 0;
     background-color: #F1A600;
 }
 nav ul {
     display: flex;
     background-color: aqua;
+    
 }
 nav ul li{
 
@@ -37,8 +40,6 @@ nav ul li{
 }
 
 .checkbtn{
-
-
     
     display: none;
     position: relative;
@@ -48,8 +49,16 @@ nav ul li{
     display: none;
 }
 
+/* contenido depsues de la nav*/
+
+div{
+    display: flex;
+}
 .texto{
     margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
 }
 .texto h1{
     font-size: 150px;
@@ -58,5 +67,213 @@ nav ul li{
 .texto p{
     font-size: 40px;
 }
+
+div>.texto>.iconos{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+div>.iconos>img{
+
+    width: 60px;
+    height: 60px;
+    margin-right: 3rem;
+    
+} 
+
+div>.imagen-perfil>img{
+  
+    height: auto;
+    position: absolute;
+    margin-top: 4rem;
+    right: 50px;
+    
+}
+
+/* Acerca de mi */
+
+.acercademi{
+    
+    text-align: center;
+    padding: 5rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+}
+
+.acercademi>section>p{
+    margin-top: 2rem;
+}
+
+.acercademi>.logos{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.acercademi>.logos>.UVM{
+    display: flex;
+    flex-direction: column;
+}
+.UVM>img{
+    width: 200px;
+    height: auto;
+}
+
+.UVM>h3{
+    margin: 1rem 0 1rem;
+}
+
+.UVM>h3 span{
+    margin-top: 1rem;
+    opacity: .5;
+}
+
+.acercademi>.logos>.Academlo{
+    display: flex;
+    flex-direction: column;
+}
+
+.Academlo>img{
+
+    width: 180px;
+    height: 200px;
+}
+
+.Academlo>h3{
+    margin: 1rem 0 1rem;
+}
+.Academlo>h3 span{
+
+    opacity: 0.5;
+}
+
+/* seccion de la experiencia*/
+.Experiencia{
+
+    border: 5px solid #1F1D2C ;
+    background-color: var(--azul-oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem ;
+    position: relative;
+    top: 150px;
+    width: auto;
+    height: 650px;
+    
+
+}
+
+.contenedor-ex{
+    margin-top: 4rem;
+}
+
+.contenedor-ex>.info{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.icon-red{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+    
+
+}
+.icon-red>img{
+    margin-bottom: 4rem;
+    
+}
+
+.name.icon{
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+
+}
+
+.Años{
+
+    margin-left: 2rem;
+}
+
+.elemento{
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    bottom: 20;
+}
+
+ /* apartir de aqui comenzare a estilar
+ seccion de mi habilidades*/
+
+
+ .habilidades{
+
+    border: 5px solid  #1F1D2C;
+    background-color: #1F1D2C;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 500px;
+    position: relative;
+    top: 150px;
+}
+
+.habilidades>h2{
+    position: absolute;
+    left: 15%;
+    padding-top: 2rem;
+    z-index: 3;
+}
+
+.habilidades>div>img{
+    
+    
+    width: 100%;
+    height: 450px;
+    position:relative;
+    
+}
+
+.habilidades>.porcentaje{
+    position:absolute;
+    left: 10%;
+    
+    padding-top: 5rem;
+    font-size: 2.5rem;
+    color: #F1A600;
+}
+
+.habilidades>section>article{
+    
+    margin-top: 2rem;
+} 
+
+.text-porcentaje{
+    
+    position: absolute;
+    left: 25%;
+    padding-top: 6rem;
+}
+
+.text-porcentaje>article{
+    
+
+    margin-bottom: 3.5rem;
+}
+
+
+
+
 
 

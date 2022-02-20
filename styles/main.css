@@ -10,8 +10,8 @@
 
     nav{
         display: flex;
-        flex-direction: column;
-       
+        justify-content: flex-end;
+        position: relative;
     }
     
     nav ul{
@@ -21,32 +21,368 @@
         position: fixed;
         width: 100%;
         height: 100vh;
-        margin-top: 1rem;
-        left: -100%;
+        padding: 2.5rem;
+        right: -100%;
+        top: 0;
         text-align: center;
         background: var(--azul-clar);
         transition: all .5s;
+        z-index: 500;
   
     }
 
     nav ul li{
         display: block;
         line-height: 30px;
+        margin-top: 2rem;
+        
     }
     .checkbtn{
 
-        display: block;
+        display: inline-block;
         
-        
-        z-index: 100;
+        margin-left: auto;
+        margin-right: 2rem;
+        z-index: 600;
 
-
-        
     }
 
     #check:checked ~ul {
-       left: 0;
+       right: 0;
     }
     
-   
+   /*parte de pues de la nav*/
+
+    div{
+        display: flex;
+    }
+    .texto{
+        margin-left: 2rem;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 200;
+       
+        
+    }
+    .texto h1{
+        font-size: 50px;
+    }
+
+    .texto p{
+        font-size: 18px;
+    }
+
+    div>.texto>.iconos{
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        
+
+    }
+
+    div>.iconos>img{
+
+        width: 30px;
+        height: 30px;
+        margin-right: 3rem;
+        
+    } 
+
+    div>.imagen-perfil>img{
+        width: 230px;
+        height: auto;
+        position: absolute;
+        margin-top: 4rem;
+        right: 25px;
+        
+    }
+
+    /*seccion de acerca de mi*/
+
+    .acercademi{
+    
+        text-align: center;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 100px;
+    }
+    
+    .acercademi>section>p{
+        margin-top: 2rem;
+    }
+    
+    .acercademi>.logos{
+    
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+    }
+    
+    .acercademi>.logos>.UVM{
+        display: flex;
+        flex-direction: column;
+    }
+    .UVM>img{
+        width: 100px;
+        height: auto;
+    }
+    
+    .UVM>h3{
+        margin: 1rem 0 1rem;
+    }
+    
+    .UVM>h3 span{
+        margin-top: 1rem;
+        opacity: .5;
+    }
+    
+    .acercademi>.logos>.Academlo{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Academlo>img{
+    
+        width: 100px;
+        height: 100px;
+    }
+    
+    .Academlo>h3{
+        margin: 1rem 0 1rem;
+    }
+    .Academlo>h3 span{
+    
+        opacity: 0.5;
+    }
+
+    /* seccion de xperiencia*/
+
+    .Experiencia{
+
+        border: 5px solid #1F1D2C ;
+        background-color: var(--azul-oscuro);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem ;
+        position: relative;
+        top: 150px;
+        width: 100%;
+        height: 650px;
+
+    }
+    
+    .contenedor-ex{
+        margin-top: 4rem;
+    }
+    
+    .contenedor-ex>.info{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    
+    .icon-red{
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+        
+    
+    }
+    .icon-red>img{
+        margin-bottom: 4rem;
+        
+    }
+    
+    .name.icon{
+    
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+    
+    }
+    
+    .Años{
+    
+        margin-left: 3rem;
+    
+        
+    
+    }
+    
+    .elemento{
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        position: relative;
+        bottom: 20;
+    }
+
+        /* apartir de aqui comenzare a estilar
+    seccion de mi habilidades*/
+
+
+    .habilidades{
+
+        border: 5px solid  #1F1D2C;
+        background-color: #1F1D2C;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 650px;
+        position: relative;
+        top: 150px;
+        padding-top: 80px;
+        
+    }
+
+    .habilidades>h2{
+        position: absolute;
+        left: 45%;
+        padding-top: 2rem;
+        z-index: 3;
+    }
+
+    .habilidades>div>img{
+        
+        
+        width: 100%;
+        height: 450px;
+        position:relative;
+        
+    }
+
+    .habilidades>.porcentaje{
+        position:absolute;
+        left: 10%;
+        
+        padding-top: 5rem;
+        font-size: 2.5rem;
+        color: #F1A600;
+    }
+
+    .habilidades>section>article{
+        
+        margin-top: 2rem;
+    } 
+
+    .text-porcentaje{
+        
+        position: absolute;
+        left: 50%;
+        padding-top: 5rem;
+    }
+
+    .text-porcentaje>article{
+        
+
+        margin-bottom: 3rem;
+    }
+        
+     /* apartir de aqui se comezara estilar todo lo que conlleva
+    la seccion de mi portafolio*/
+
+    .sec-portafolio{
+        background-color: var(--azul-oscuro);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        top: 150px;
+        width: 100%;
+        height: 1050px;
+        
+    }
+
+    .sec-portafolio>section{
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    .img-porta>div{
+        
+        
+        display: flex;
+    
+        margin-top: 5rem;
+    }
+
+    /* configuracion de las imagenes dentro de la
+    section del portafolio*/
+
+    .contenedor{
+        border: 5px solid #F1A600 ;
+        background-color: #F1A600;
+        width: 250px;
+        height: 170px;
+        margin-left: 2rem ;
+        position: absolute;
+        bottom:2;
+        
+    }
+
+    .img1{
+        
+        display: flex;
+        flex-direction: column; 
+        width: 300px;
+        margin-left: 2rem ;
+        z-index: 2;
+        align-items: center;
+
+    }
+    
+    .img1>img{
+
+    width:250px;
+    height: 160px;
+    margin-left: .5rem;
+    margin-top: 1rem;
+        
+    }
+
+    .img2{
+
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 25%;
+        width: 250px;
+        
+    }
+
+    .img-porta>.contenedor-2{
+
+        border: 5px solid #F1A600 ;
+        background-color: #F1A600;
+        width: 280px;
+        height: 150px;
+        position: absolute;
+        top: 620px;
+        margin-left: 2rem ;
+
+        
+        
+    }
+
+    .img3{
+        display: flex;
+        flex-direction: column; 
+        width: 280px;
+        margin-left: 3rem ;
+        position: relative;
+        
+    }
+
+    .img3>img{
+        height: 180px;
+    }
+    
+
+
 }
