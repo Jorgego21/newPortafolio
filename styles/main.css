@@ -383,6 +383,88 @@
         height: 180px;
     }
     
+    /* aqui termina la etapa de main 
+
+y  comienza la etapa de footer*/
+
+    footer{
+        border: 1px solid #242535 ;
+        background-color: #242535;
+       
+        position: relative;
+        top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-right:0;
+        margin-left: 0;
+    }
+
+    .icon-info{
+        display: flex;
+        flex-direction: row;
+        
+        margin-top: 2rem;
+    }
+
+    .icon-info>div{
+        margin-right: 0;
+        margin-left: 0; 
+        margin: 0;
+
+    }
+
+    .icon-info>.phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .icon-info>.phone>img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-info>.phone>h3{
+        font-size: 14px;
+    }
+
+    .icon-info>.phone>h4{
+        opacity: .5;
+        font-size: 10px;
+    }
+
+    .icon-info>.email{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        
+
+      
+    }
+
+    .icon-info>.email>img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .icon-info>.email>h3{
+        font-size: 14px;
+    }
+    .icon-info>.email>h4{
+        opacity: .5;
+        font-size: 10px;
+    }
+        
+    
 
 
 }

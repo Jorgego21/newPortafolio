@@ -25,11 +25,11 @@ nav{
     justify-content: end;
     
     padding: 2rem 0;
-    background-color: #F1A600;
+    
 }
 nav ul {
     display: flex;
-    background-color: aqua;
+    margin-right: 2rem;
     
 }
 nav ul li{
@@ -271,6 +271,156 @@ div>.imagen-perfil>img{
 
     margin-bottom: 3.5rem;
 }
+
+.sec-portafolio{
+    background-color: var(--azul-oscuro);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 150px;
+    width: auto;
+    height: 1350px;
+    
+ }
+
+ .sec-portafolio>section{
+     display: flex;
+     flex-direction: column;
+     
+
+ }
+
+ .img-porta>div{
+    
+    
+    display: flex;
+  
+     margin-top: 5rem;
+ }
+
+ /* configuracion de las imagenes dentro de la
+ section del portafolio*/
+
+ .contenedor{
+    border: 5px solid #F1A600 ;
+    background-color: #F1A600;
+    width: 430px;
+    height: 300px;
+    margin-left: 4rem ;
+    position: absolute;
+    top: 5px;
+    
+ }
+
+ .img1{
+     
+    display: flex;
+    flex-direction: column; 
+    width: 350px;
+    margin-left: 5rem ;
+    z-index: 2;
+
+ }
+ 
+.img1>img{
+
+  width:400px;
+    
+}
+
+.img2{
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 60%;
+    width: 400px;
+    
+}
+
+.img-porta>.contenedor-2{
+
+    border: 5px solid #F1A600 ;
+    background-color: #F1A600;
+    width: 430px;
+    height: 300px;
+    position: absolute;
+    top: 840px;
+    margin-left: 4rem ;
+
+    
+    
+}
+
+.img3{
+    display: flex;
+    flex-direction: column; 
+    width: 400px;
+    margin-left: 5rem ;
+    position: relative;
+}
+
+
+/* aqui termina la etapa de main 
+
+y  comienza la etapa de footer*/
+
+footer{
+    border: 5px solid #242535 ;
+    background-color: #242535;
+    position: relative;
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.icon-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+
+}
+
+.icon-info>.phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 8rem;
+    font-size: 18px;
+}
+
+.icon-info>.phone>img{
+    width: 40px;
+    height: 40px;
+}
+
+.icon-info>.phone>h4{
+    opacity: .5;
+}
+
+.icon-info>.email{
+     display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    align-items: center;
+    margin-left: 8rem;
+}
+
+.icon-info>.email>img{
+    width: 40px;
+    height: 40px;
+}
+
+.icon-info>.email>h4{
+    opacity: .5;
+}
+
+
+
 
 
 
